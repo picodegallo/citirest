@@ -40,7 +40,7 @@ module Citibike
     erb :edit
   end
 
-  put '/stations/:idx' do
+  put '/stations/:id' do
     @station = Station.get(params[:id])
     if @station.update(params[:station])
       redirect '/stations/' + params[:id]
