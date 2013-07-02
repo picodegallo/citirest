@@ -1,0 +1,16 @@
+<h3><%= @station.name %></h3>
+<hr>
+<ul>
+<li>Station Number: <%= @station.number %></li>
+<li>Total Bikes: <%= @station.bikes %></li>
+<li>Free Bikes: <%= @station.free %></li>
+<li>Address: <%= @station.address %></li>
+<li>Latitude: <%= @station.lat %></li>
+<li>Longitude: <%= @station.lng %></li>
+</ul>
+<hr>
+<a href="/stations/edit/<%= @station.id %>">EDIT</a><br>
+<a href="/stations/delete/<%= @station.id%>">DELETE</a><br>
+<a href="/stations">Back to Index</a>
+
+

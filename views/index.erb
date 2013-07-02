@@ -1,0 +1,12 @@
+<h3>Stations</h3>
+<a href="/stations/new">Create a new station</a>
+<hr>
+<% @station.each do |station| %>
+<ul>
+<li>Station: <%= station[:id] %></li>
+<li><a href="/stations/<%= station[:id] %>"><%= station[:name] %></a></li>
+<li><a href="/stations/edit/<%= station[:id] %>">EDIT</a></li>
+<li><a href="/stations/delete/<%= station[:id] %>">DELETE</a></li>
+</ul>
+<hr>
+<%end%>

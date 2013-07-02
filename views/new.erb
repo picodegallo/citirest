@@ -1,0 +1,13 @@
+<form action="/stations" method="POST">
+<h1>Create a new station</h1>
+<hr>
+<fieldset>
+<p><label>Station Name: </label> <input type="text" name="station[name]" /></p>
+<p><label>Station Number: </label> <input type="text" name="station[number]" /></p>
+<p><label>Free Bikes: </label> <input type="text" name="station[free]" /></p>
+<p><label>Number of Bikes: </label> <input type="text" name="station[bikes]" /></p>
+<p><label>Address: </label> <input type="text" name="station[address]" /></p>
+<p><label>Latitude: </label> <input type="text" name="station[lat]" /></p>
+<p><label>Longitude: </label> <input type="text" name="station[lng]" /></p>
+</fieldset>
+<input type="submit" value="Create"> or <a href="/stations">Cancel</a>
